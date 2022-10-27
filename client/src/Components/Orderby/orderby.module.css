@@ -1,0 +1,74 @@
+.titles {
+    font-family: 'myFont2';
+    font-size: 25px;
+    font-weight: bold;
+    color: azure;
+    margin-top: 100px;
+    margin-bottom: 15px;
+}
+
+.divName {
+    margin-top: 5px;
+    text-align: start;
+    margin-left: 38px;
+}
+
+.subTitles {
+    color: azure;
+    font-weight: bold;
+    text-align: start;
+    padding-right: 10px;
+}
+
+.divRating {
+    margin-top: 7px;
+    text-align: start;
+    margin-bottom: 15px;
+    margin-left: 38px;
+}
+
+.selects {
+    width: 100px;
+    background-color: #dedef5;
+    border-color: rgb(146, 74, 212);
+    border-width: 2px;
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .divSort {
+        margin-left: 15px;
+    }
+
+    .titles {
+        font-size: 18px;
+        font-weight: normal;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        text-align: start;
+    }
+
+    .subTitles {
+        font-weight: normal;
+        font-size: 16px;
+    }
+
+    .selects {
+        width: 75px;
+        font-size: 11px;
+        border-width: 2px;
+    }
+
+    .divName {
+        margin-left: 0px;
+    }
+
+    .divRating {
+        margin-left: 0px;
+    }
+}
