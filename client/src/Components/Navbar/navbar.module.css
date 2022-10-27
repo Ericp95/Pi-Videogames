@@ -1,0 +1,42 @@
+.nav {
+    display: flex;
+    position: fixed;
+    width: 100vw;
+    justify-content: space-around;
+    background-color: black;
+    padding-top: 12px;
+    padding-bottom: 15px;
+}
+
+.text {
+    font-family: 'myFont2';
+    font-weight: bold;
+    font-size: 30px;
+    color: #ecc5f1;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+
+
+ 
+
+@media screen and (max-width: 700px) {
+    .nav {
+        width: 100%;
+        padding-top: 17px;
+        padding-bottom: 17px;
+    }
+    
+    .text {
+
+        font-weight: normal;
+        font-size: 18px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+}
