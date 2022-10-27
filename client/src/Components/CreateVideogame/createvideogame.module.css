@@ -1,0 +1,106 @@
+.container {
+    color: aliceblue;
+    font-size: 15px;
+    display: flex;
+    margin: 4em;
+    justify-content: center;
+}
+.container a {
+    color: aliceblue;
+}
+
+.createVideogame {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 80%;
+    font-size: 1.5em;
+    background: rgba(0, 0, 0, 0.90);
+    border-radius: 0.5em;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2em;
+    width: 40%;
+    border-radius: 0.2em;
+    margin-bottom: 0.5em;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: aliceblue;
+    color: black;
+}
+.inputs:hover span {
+    cursor: pointer;
+}
+
+.btn {
+    font-family: 'VT323';
+    font-weight: bold;
+    font-size: 1.5em;
+    color: rgb(48, 48, 48);
+    background-color: rgb(200, 44, 227);
+    border-radius: 0.15em;
+    padding: 0.15em;
+    margin-bottom: 1em;
+}
+.btn:hover {
+    color: black;
+    background-color: rgb(155, 32, 176);
+}
+
+.error {
+    font-size: 0.7em;
+    color: yellow;
+}
+.created {
+    color: rgb(155, 32, 176);
+}
+
+.added {
+    margin-bottom: 0.6em;
+    margin-right: 0.2em;
+    margin-left: 0.2em;
+}
+.added button {
+    color: aliceblue;
+    background-color: brown;
+    border-radius: 0.3em;
+}
+
+
+select {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.3em;
+    color: gray;
+    border: 0;
+    border-radius: 0.2em;
+    width: 40%;
+}
+select:hover {
+    color: rgb(105, 105, 105);
+}
+
+
+
+@media (max-width: 1400px) {
+    .inputs {
+        width: 60%;
+    }
+    .createVideogame select{
+        width: 60%;
+    }
+}
+@media (max-width: 700px) {
+    .container {
+        width: 255%;
+        margin: 0;
+    }
+    .createVideogame {
+        font-size: 3em;
+    }
+    .createVideogame {
+        margin-top: 10%;
+        width: 80%;
+    }
+}
