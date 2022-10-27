@@ -4,7 +4,7 @@ import styles from './detail.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { getVideogameId, clearName } from '../../Redux/Actions';
 import { Link, useParams } from "react-router-dom";
-import Loading from '../Helpers/Loading.jsx'
+import Loading from '../../Loading/Loading'
 
 
 function Detail() {
@@ -29,8 +29,9 @@ function Detail() {
             <div className={styles.gameDetail}>
                 {
                     (!videogameDetail.platforms && !videogameDetail.rating && !videogameDetail.released && !videogameDetail.description && !videogameDetail.img)
-                        ? <Loading />
-                        : (
+                    ? <Loading />
+                    : 
+                        (
                             <div className={styles.card}>
                                 <div className={styles.row}>
                                     {videogameDetail.img
@@ -77,6 +78,3 @@ function Detail() {
 
 export default Detail;
 
-/**<Link to='/home'>
-                <button onClick={() => dispatch()}>← Return</button>
-            </Link> */
