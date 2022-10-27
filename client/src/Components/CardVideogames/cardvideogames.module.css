@@ -1,0 +1,27 @@
+.cards {
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 5%;
+  width: 260px;
+  height: 315px;
+}
+
+.title {
+  font-family: "Roboto",sans-serif;
+  font-size: 18px;
+  color: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: bold;
+  padding-left: 6px;
+  padding-right: 6px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+
+
+.image {
+  max-width: 100%;
+  border: 1px solid black;
+}
