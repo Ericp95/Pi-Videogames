@@ -1,0 +1,159 @@
+.divTwoColum {
+    display: flex;
+    
+}
+
+
+
+.firstColum {
+    width: 18%;
+    position: fixed;
+    margin-top: 58px;
+    background-color: black;
+    height: 100%;
+}
+
+.btn {
+    color: rgb(75, 3, 143);
+    background-color: #dedef5;
+    border-color: rgb(146, 74, 212);
+    border-width: 2px;
+    border-radius: 10%;
+    cursor: pointer;
+    padding-left: 5px;
+    margin-left: 2px;
+    margin-top: 53px;
+    font-family: 'myFont2';
+    font-size: 20px;
+}
+
+.btn:hover {
+    color: rgb(240, 235, 245);
+    background-color: #4444d1e7;
+    border-color: rgb(240, 235, 245);
+}
+
+
+
+.secondColum {
+    width: 80%;
+    padding-top: 55px;
+    padding-left: 246px; 
+}
+
+.title {
+    font-family: 'myFont2';
+    font-size: 30px;
+    color: black;
+    margin-top: 35px;
+}
+
+.home{
+    display: flex;
+}
+
+.btnLeave {
+    display: flex;
+    color: rgb(75, 3, 143);
+    background-color: #dedef5;
+    border-color: rgb(146, 74, 212);
+    border-width: 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    padding-left: 5px;
+    margin-left: 998px;
+    margin-top: 360px;
+    font-family: 'myFont2';
+    font-size: 25px;
+    position: fixed;
+    padding: 15px;
+}
+
+.btnLeave:hover {
+    font-size: 27px;
+    color: rgb(240, 235, 245);
+    background-color: #4444d1e7;
+    border-color: rgb(240, 235, 245);
+}
+
+
+.divCards {
+    display: grid;
+    flex-direction: row;
+    justify-content: space-around;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 15px;
+    width: 100%;
+    margin-left: 90px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+.loading {
+    justify-content: center;
+    text-align: center;
+    padding-left: 470px;
+    padding-top: 100px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 700px) {
+
+    .firstColum {
+        width: 100%;
+        position: fixed;
+        margin-top: 55px;
+        height: auto;
+        display: flex;
+    }
+
+    .btn {
+        padding-left: 5px;
+        margin-left: 25px;
+        margin-right: 20px;
+        margin-top: auto;
+        margin-bottom: auto;
+        font-size: 16px;
+    }
+
+    .btnLeave:hover {
+        font-size: 18px;
+    }
+
+    .secondColum {
+        width: 100%;
+        padding-top: 190px;
+        padding-left: 0px;
+        margin-right: auto;
+        text-align: center; 
+    }
+    
+    .title {
+        font-size: 20px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .loading {
+        padding-left: 0px;
+        padding-top: 50px;
+        width: 50px;
+    }
+
+    .divLoading {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .divCards {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px
+    }
+}
