@@ -1,14 +1,14 @@
 import React from 'react';
-import SearchBar from '../SearchBar/searchbar'
+//import SearchBar from '../SearchBar/searchbar'
 import s from './navbar.module.css';
 import { Link } from 'react-router-dom';
 
 
 export default function Navbar () {
     return (
-        <nav  className={s.nav}>
+        <div  className={s.nav}>
 
-          <SearchBar/>
+        
 
             <Link to='/home'>
                 <span className={s.text}>HOME</span>
@@ -22,7 +22,7 @@ export default function Navbar () {
             
             
 
-        </nav> 
+        </div> 
         
     )
 }
