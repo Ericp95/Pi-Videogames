@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getVideogames } from "../../Redux/Actions";
 import Navbar from "../Navbar/navbar";
-//import SearchBar from "../SearchBar/searchbar";
+import SearchBar from "../SearchBar/searchbar";
 import CardVideogames from "../CardVideogames/cardvideogames";
 import Paginate from "../Paginate/paginate";
 import Filter from "../Filter/filter";
@@ -18,7 +18,7 @@ import s from './home.module.css';
 export default function Home() {
 
     let dispatch = useDispatch();
-
+ 
     const allVideogames = useSelector(state => state.videogames);
     const [currentPage, setCurrentPage] = useState(1);
     const [videogamesPerPage] = useState(15);
@@ -29,6 +29,8 @@ export default function Home() {
     const [namechange, setNamechange] = useState('');
     const [ratingchange, setRatingchange] = useState('');
     const [genrechange, setGenrechange] = useState('');
+
+    
     const [, setOrder] = useState()
 
     const pagination = (pageNumber) => {
@@ -70,7 +72,7 @@ export default function Home() {
         setOrder("Order" + e)
     }
 
-    function handlerByName(e) { //no puedo pasar un estado local a otro componente?
+    function handlerByName(e) { 
         dispatch(sortVideogameAlphabetically(e.target.value))
         setCurrentPage(1);
         setRatingchange("");
@@ -105,7 +107,7 @@ export default function Home() {
 
                 <div className={s.secondColum}>
                     <h1 className={s.title}>VIDEOGAME LIST</h1>
-                    
+                    <SearchBar setCurrentPage={setCurrentPage}/>
                     <Paginate videogamesPerPage={videogamesPerPage} allVideogames={allVideogames.length} pagination={pagination} currentPage={currentPage}/>
                     
                     <div className={s.divCards}>
